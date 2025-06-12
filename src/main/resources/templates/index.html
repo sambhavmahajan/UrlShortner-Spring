@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Sambhav Mahajan">
+    <title>Url Shortner</title>
+</head>
+<body>
+<form method="post" th:action="@{/add}" th:object="${urlDto}">
+    <label>url</label>
+    <input type="text" th:field="*{url}"/>
+    <input type="submit" value="shorten">
+</form>
+<p th:if="${urlDto}" th:text="${urlDto.getText()}"></p>
+<footer>
+    <p>© 2025 Sambhav Mahajan. All rights reserved.</p>
+</footer>
+</body>
+</html>
