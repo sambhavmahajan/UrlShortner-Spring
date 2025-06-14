@@ -1,5 +1,5 @@
 ### UrlShortner
-This is a project to shorten URL's using generating a random UUID and getting the first 5 characters as the shortned url. Before starting, please edit the .env file for your database.
+This is a project to shorten URL's using generating a random UUID and getting the first 5 characters as the shortned url. Before starting, please edit the .env file for your database. Please use JDK 24.0.1
 
 Keyfeatures:
 - Shortens Provided URL
